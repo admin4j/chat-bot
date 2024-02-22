@@ -2,7 +2,7 @@ package com.admin4j.chatbot.dingtalk.request;
 
 import com.admin4j.chatbot.dingtalk.core.MsgType;
 import com.admin4j.chatbot.dingtalk.request.base.AbstractRobotRequest;
-import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson2.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;

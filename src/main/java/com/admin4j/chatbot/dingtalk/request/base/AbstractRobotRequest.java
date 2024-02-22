@@ -2,8 +2,8 @@ package com.admin4j.chatbot.dingtalk.request.base;
 
 import com.admin4j.chatbot.dingtalk.core.At;
 import com.admin4j.chatbot.dingtalk.core.MsgType;
-import com.alibaba.fastjson.annotation.JSONField;
-import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.alibaba.fastjson2.JSONWriter;
+import com.alibaba.fastjson2.annotation.JSONField;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -23,7 +23,7 @@ public abstract class AbstractRobotRequest {
      *
      * @return
      */
-    @JSONField(name = "msgtype", serialzeFeatures = SerializerFeature.WriteEnumUsingToString)
+    @JSONField(name = "msgtype", serializeFeatures = JSONWriter.Feature.WriteEnumUsingToString)
     public abstract MsgType getMsgType();
 
     public void setAtAll() {

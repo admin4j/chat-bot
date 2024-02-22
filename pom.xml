@@ -10,7 +10,7 @@
     <!--    </parent>-->
     <groupId>com.admin4j</groupId>
     <artifactId>chat-bot</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.0</version>
     <name>chat-bot</name>
     <description>chat-bot 群聊机器人支持钉钉等</description>
     <url>https://github.com/admin4j</url>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>io.github.admin4j</groupId>
             <artifactId>http</artifactId>
-            <version>0.4.4</version>
+            <version>0.9.1</version>
         </dependency>
 
         <dependency>
@@ -85,7 +85,6 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <skipStagingRepositoryClose>true</skipStagingRepositoryClose>
                     <autoDropAfterRelease>true</autoDropAfterRelease>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
